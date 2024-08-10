@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyFrame Animations</title>
+</head>
+<style>
+    .moving-div{
+         height:200px;
+         width:200px;
+         background-color: green;
+         animation:  moveLeftToRight 6s linear infinite; 
+         position: absolute; 
+        }
+    @keyframes moveLeftToRight {
+        0%{
+            left:-200px;
+        }
+        50%{
+            left:calc(100% - 200px);
+        }
+        100%{
+            left:-200px;
+        }
+    }
+</style>
+<body>
+    <div class="moving-div"></div>
+</body>
+</html> 

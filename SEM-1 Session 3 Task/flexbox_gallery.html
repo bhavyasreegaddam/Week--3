@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: url('header-bg.jpg') no-repeat center center/cover;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+        }
+        header .logo img {
+            width: 100px;
+            height: auto;
+        }
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            margin: 0;
+        }
+        header nav ul li {
+            margin-left: 20px;
+        }
+        header nav ul li a {
+            text-decoration: none;
+            color:red;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header nav ul li a:hover {
+            color:green;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            background: url('gallery-bg.jpg') no-repeat center center/cover;
+        }
+        .gallery figure {
+            margin: 10px;
+            border: 2px solid #ddd;
+            background-color: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .gallery figure:hover {
+            transform: scale(1.05);
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+        .gallery figcaption {
+            padding: 10px;
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            font-size: 1rem;
+        }
+        footer {
+            color:black;
+            font-size:20px;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .logo{
+            display:flex;
+        }
+
+        #name{
+        font-size:30px;
+        margin-left:20px;
+    }
+    #email{
+        font-size:30px;
+        margin-left:20px;
+    }
+    #subject{
+        font-size:50px;
+        width:500px;
+        margin-left:20px;
+        
+    }
+    #message{
+        font-size:200px;
+        width:500px;
+        margin-left:20px;
+    }
+    .contact{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        margin-right:400px;
+        margin-left:500px;
+        margin-top:100px;
+        border-radius:20px;
+        
+    }
+    .name{
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left:17px;
+    }
+    .email{
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left:17px;
+    }
+    .subject{
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left:17px;
+    }
+    .message{
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left:17px;
+    }
+    button{
+        font-size:30px;
+        margin-top:25px;
+        margin-left:200px;
+        margin-bottom:20px;
+        background-color:green;
+        border-radius:10px;
+    }
+    img{
+        height:30px;
+        width:30px;
+    }
+    .contact-me{
+        text-align: center;
+    }
+    @media(max-width:800px) and (min-width:300px){
+    .body{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+    h1{
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color:darkcyan;
+    }
+    </style>
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <div class="gallery">
+        <figure>
+            <img src="../Indian Peafowl.jpg" alt="A beautiful Indian Peafowl" width="300" height="200">
+            <figcaption>Indian Peafowl</figcaption>
+        </figure>
+        <figure>
+            <img src="../Nilgiri Flycatcher.jpg" alt="Nilgiri Flycatcher" width="300" height="200">
+            <figcaption>Nilgiri Flycatcher</figcaption>
+        </figure>
+        <figure>
+            <img src="../Lesser Flamingo.jpg" alt="Lesser Flamingo" width="300" height="200">
+            <figcaption>Lesser Flamingo</figcaption>
+        </figure>
+        <figure>
+            <img src="../Lesser Black-backed Gull.jpg" alt="Lesser Black-backed Gull" width="300" height="200">
+            <figcaption>Lesser Black-backed Gull</figcaption>
+        </figure>
+        <figure>
+            <img src="../Common lora.jpg" alt="Common lora" width="300" height="200">
+            <figcaption>Common lora</figcaption>
+        </figure>
+        <figure>
+            <img src="../Asian Emerald Dove.jpg" alt="Asian Emerald Dove" width="300" height="200">
+            <figcaption>Asian Emerald Dove</figcaption>
+        </figure>
+    </div>
+    </body>
+</html>

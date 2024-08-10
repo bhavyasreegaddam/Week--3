@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables Example</title>
+    <style>
+        :root {
+            --primary-color: #3498db; 
+            --secondary-color: #2ecc71;
+            --accent-color: #e74c3c; 
+            --base-font-size: 16px;
+            --heading-font-size: 24px;
+            --padding: 16px;
+            --margin: 16px;
+        }
+        body {
+            font-size: var(--base-font-size);
+            color: var(--primary-color);
+            padding: var(--padding);
+            margin: var(--margin);
+            background-color: #f4f4f4; 
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: var(--heading-font-size);
+            color: var(--secondary-color);
+        }
+        p {
+            margin-bottom: var(--margin);
+        }
+
+        button {
+            background-color: var(--accent-color);
+            color: #fff;
+            padding: var(--padding);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #c0392b; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>I Am Learning Full Stack Web Development At Web Plus Academy</p>
+    <button>Click Me!</button>
+</body>
+</html>

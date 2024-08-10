@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple keyframes</title>
+</head>
+<style>
+    .box{
+        height:100px;
+        width:100px;
+        background-color: red;
+        border-radius: 50%;
+        animation: moveUpAndDown 5s linear infinite;
+        position: absolute;
+        border:10px dotted green;
+    }
+    @keyframes moveUpAndDown{
+        0%{
+            top:-200px;
+        }
+        50%{
+            top:calc(100% - 200px);
+        }
+        100%{
+            top:-200px;
+        }
+    }
+</style>
+<body>
+    <div class="box"></div>
+</body>
+</html>

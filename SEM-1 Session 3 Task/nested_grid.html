@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Grid</title>
+</head>
+<style>
+    .total{
+        /* border:2px solid red; */
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 1000;
+    }
+    header{
+        /* border: 2px solid green; */
+        height:50px;
+        text-align: center;
+        background-color:chartreuse;
+        padding-top: 20px;
+    }
+    .main-1{
+        /* border:2px solid red; */
+        background-color: aquamarine;
+        width:600px;
+        text-align: center;
+        margin-top:20px;
+    }
+    .main-2{
+        /* border:2px solid yellowgreen; */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left:100px;
+        width:700px;
+    
+    }
+    .sub{
+        /* border:2px solid green; */
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        height:500px;
+    }
+    .main-2 div{
+        /* border:2px solid forestgreen;
+        background-color: orange; */
+        margin-left:20px;
+        margin-top:20px;
+        background: whitesmoke;
+        text-align: center;
+        padding-top:100px;
+    }
+    footer{
+        /* border: 2px dotted violet; */
+        margin-top: 20px;
+        height:60px;
+        text-align: center;
+        background-color: burlywood;
+        padding-top:20px;
+    }
+</style>
+<body>
+    <div class="total">
+        <header>Header</header>
+        <div class="sub">
+        <div class="main-1">Main Section</div>
+        <div class="main-2">
+            <div>Subitem-1</div>
+            <div>Subitem-2</div>
+            <div>Subitem-3</div>
+            <div>Subitem-4</div>
+        </div>
+        </div>
+    <footer>
+        Footer
+    </footer>
+    </div>
+</body>
+</html>

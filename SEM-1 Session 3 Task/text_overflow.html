@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Overflow Ellipsis</title>
+    <style>
+        .container {
+            width: 500px;  
+             white-space: nowrap; 
+            overflow: hidden;  
+            text-overflow: ellipsis;  
+            border:5px solid yellowgreen;
+            font-family: Arial, sans-serif;
+            margin-left:500px;
+        }
+        h1{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text OverFlow</h1>
+    <div class="container">
+        This is a long text string that will be truncated with an ellipsis at the end if it overflows the container.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nostrum, commodi quis eveniet reiciendis suscipit aut neque rerum ea! Et voluptatibus autem, vero consectetur culpa eum esse eveniet modi quas.
+    </div>
+</body>
+</html>

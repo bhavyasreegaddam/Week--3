@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Card Layout</title>
+</head>
+<style>
+    .container{
+         /* border:2px solid green;  */
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr;
+        height: 600px;
+    }
+    .container div{
+        border:2px solid red;
+        display: grid;
+    }
+    .container div img{
+        height:200px;
+        padding-left: 70px;
+        padding-top:10px;
+    }
+    .container div p{
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 1000;
+    }
+    @media(max-width:900px){
+        .container{
+             grid-template-columns:1fr 1fr;
+        }
+    }
+    @media(max-width:600px){
+        .container{
+             grid-template-columns: 1fr; 
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div>
+            <img src="https://gardenerspath.com/wp-content/uploads/2024/05/How-to-Grow-Apples-Feature.jpg">
+            <p>Apple</p>
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/71SHlXX2OUL._AC_UF1000,1000_QL80_.jpg">
+            <p>Cherry</p>
+        </div>
+        <div>
+            <img src="https://images.everydayhealth.com/images/diet-nutrition/ordinary-fruits-with-amazing-health-benefits-05-1440x810.jpg">
+            <p>Strawberry</p>
+        </div>
+        <div>
+            <img src="https://qph.cf2.quoracdn.net/main-qimg-f7ca05b7f4df32e3d91c2910be38c2e8-pjlq">
+            <p>Mango</p>
+        </div>
+        <div>
+            <img src="https://www.fruitsmith.com/pub/media/blog/Lychee_.png">
+            <p>Lychee</p>
+        </div>
+        <div>
+            <img src="https://5.imimg.com/data5/SELLER/Default/2022/1/AC/ZJ/CC/145472369/jack-fruit-250x250.jpg">
+            <p>JackFruit</p>
+        </div>
+    </div>
+</body>
+</html>

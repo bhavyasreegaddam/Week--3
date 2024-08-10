@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input Methods</title>
+</head>
+<style>
+    body{
+        background-color: bisque;
+    }
+    form{
+        margin-left: 600px;
+        margin-right:600px;
+    }
+    #name{
+        height:30px;
+        width:250px;
+    }
+    #name:focus{
+        background-color: lightgreen;
+        border:3px solid darkgoldenrod;
+    }
+    #email{
+        height:30px;
+        width:250px;
+    }
+    #email:focus{
+        background-color: lightgreen;
+        border:3px solid darkgoldenrod;
+    }
+    #phone{
+        height:30px;
+        width:250px;
+    }
+    #phone:focus{
+        background-color: lightgreen;
+        border:3px solid darkgoldenrod;
+    }
+    #message{
+        height:30px;
+        width:250px;
+    }
+    #message:focus{
+        background-color: lightgreen;
+        border:3px solid darkgoldenrod;
+    }
+    form label{
+        font-size: 21px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    button{
+        margin-left:90px;
+        font-size: 20px;
+        color:white;
+        background-color:green;
+    }
+</style>
+<body>
+    <form>
+        <label for="name">Name</label><br><br>
+        <input type="text" id="name"><br><br>
+        <label for="email">Email</label><br><br>
+        <input type="email" id="email"><br><br>
+        <label for="phone">Phone Number</label><br>
+        <input type="number" id="phone"><br><br>
+        <label for="message">Message</label><br><br>
+        <input type="text" id="message"><br><br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

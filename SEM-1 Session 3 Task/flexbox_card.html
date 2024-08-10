@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Card Layout</title>
+</head>
+<style>
+    .container{
+       
+        height:300px;
+        display: flex;
+        align-items: center;
+         /* margin-left:400px;  */
+    }
+    .first{
+        border:2px solid green;
+        width:200px;
+        height:300px;
+        margin-left:20px;
+        background-color: white;
+    }
+    .first img{
+        height:120px;
+        width:120px;
+        margin-left:40px;
+    }
+    .first p{
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+    }
+    .second{
+        border:2px solid green;
+        width:200px;
+        height:300px;
+        margin-left:20px;
+        background-color:azure;
+    }
+    .second img{
+        height:120px;
+        width:120px;
+        margin-left:40px;
+    }
+    .second p{
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+    }
+    .third{
+        border:2px solid green;
+        width:200px;
+        height:300px;
+        margin-left:20px;
+        background-color: white;
+    }
+    .third img{
+        height:120px;
+        width:120px;
+        margin-left:40px;
+    }
+    .third p{
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+    }
+    h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    @media(max-width:800px) and (min-width:20px){
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    body{
+        background-color:blanchedalmond;
+    }
+</style>
+<body>
+    <div class="container">
+       <div class="first">
+        <img src="https://thumbs.dreamstime.com/b/black-vector-design-two-men-riding-bikes-circle-white-background-two-men-riding-bikes-299643869.jpg">
+        <h1>Riding</h1>
+        <p >Riding, whether on a horse, bicycle, or motorcycle, offers a unique.</p>
+       </div>
+       <div class="second">
+        <img src="https://st2.depositphotos.com/3474805/6276/v/950/depositphotos_62769617-stock-illustration-circle-icon-on-programming.jpg">
+       <h1>Coding</h1>
+       <p>Coding is the art of creating software by writing instructions for computers to execute.  </p>
+       </div>
+       <div class="third">
+        <img src="https://static.vecteezy.com/system/resources/previews/010/249/006/original/hand-drawn-cooking-and-kitchen-elements-in-round-composition-kitchenware-and-food-in-circle-vector.jpg">
+        <h1>Cooking</h1>
+        <p>Cooking is a delightful blend of science and art, transforming raw ingredients into delicious.</p>
+       </div>
+    </div>
+</body>
+</html>

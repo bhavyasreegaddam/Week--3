@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .gallery {
+            display: grid;
+            gap: 10px;
+            padding: 10px;
+            width: 90%;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+            height:250px;
+        }
+
+        @media (min-width: 576px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (min-width: 992px) {
+            .gallery {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .gallery {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg" alt="Image 1">
+        <img src="https://www.wallartprints.com.au/blog/wp-content/uploads/2017/10/hummingbird-nature-pictures-98278440.jpg" alt="Image 2">
+        <img src="https://thumbs.dreamstime.com/b/nature-beautiful-bird-high-quality-photo-ai-318400783.jpg" alt="Image 3">
+        <img src="https://thumbs.dreamstime.com/b/fleur-de-ruby-throated-hummingbird-feeds-110162609.jpg" alt="Image 4">
+        <img src="https://static7.depositphotos.com/1313859/792/i/450/depositphotos_7929204-stock-photo-juvenile-ruby-throated-hummingbird-archilochus.jpg" alt="Image 5">
+        <img src="https://www.imageshine.in/uploads/gallery/Large-Animal-Elephant-HD-photos.jpg" alt="Image 6">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC-VnC_-S3-10EI6I2mxykCawaj0IGkZzXlBT7ehJkOkVSY7FeKc8Ala9dQHYtiZ-SEQQ&usqp=CAU" alt="Image 7">
+        <img src="https://c4.wallpaperflare.com/wallpaper/224/926/335/animal-beautiful-beauty-horse-wallpaper-preview.jpg" alt="Image 8">
+        <img src="https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/1c7f013d-5a1d-452a-80d7-b888e2c36f94/w18.jpg" alt="Image 9">
+        <img src="https://wallpapers.com/images/hd/most-beautiful-animals-wh4la9snns84cwn5.jpg" alt="Image 10">
+    </div>
+</body>
+</html>

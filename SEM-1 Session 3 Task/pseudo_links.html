@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class With Links</title>
+</head>
+<style>
+    .container{
+        font-size:30px;   
+        text-decoration: none;
+    }
+    .a{
+        text-decoration: none;
+        border: 2px solid black;
+        padding:10px;
+    }
+    .a:hover{
+        color:darkorange;
+        text-decoration: none;
+    }
+    .b{
+        text-decoration: none;
+        border: 2px solid black;
+        padding:10px;
+    }
+    .b:focus{
+        background-color:blue;
+        color:white;
+    }
+    .c{
+        text-decoration: none;
+        border: 2px solid black;
+        padding:10px;
+    }
+    .c:active{
+        text-decoration:underline;
+    }
+    .d{
+        text-decoration: none;
+        border: 2px solid black;
+        padding:10px;
+    }
+    .d:visited{
+        color:darkorchid;
+    }
+    h2{
+        color:green;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+</style>
+<body>
+    <div class="container">
+        <h2>Hover </h2>
+        <a href="#" class="a">Submit</a>
+        <h2>Focus</h2>
+        <a href="#" class="b">Login</a>
+        <h2>Active</h2>
+        <a href="#" class="c">Register</a>
+        <h2>Visited</h2>
+        <a href="#" class="d">Click</a> 
+    </div>
+</body>
+</html>

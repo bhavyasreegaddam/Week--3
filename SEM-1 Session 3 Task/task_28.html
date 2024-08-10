@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .responsive-image {
+            max-width: 100%; 
+            width: 100%; 
+            height:400px; 
+        }
+
+        @media (max-width: 600px) {
+            .responsive-image {
+                width: 80%; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://cdn.pixabay.com/photo/2016/11/18/16/19/flowers-1835619_1280.jpg" alt="Responsive Image" class="responsive-image">
+    </div>
+</body>
+</html>
